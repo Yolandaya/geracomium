@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ptu.gera.mapper.UserMapper">  <!-- 要映射的mapper的完整包+mapper名称-->
+
+
+   <select id="queryUserByNameAndPwd" resultType="user">
+	   select * from user where user_name=#{0}   and user_pwd=#{1}
+   </select>
+
+	<insert id="addUser" >
+		insert into user (user_name,user_pwd,user_age,user_sex,user_room,user_rela,user_tel,user_health,user_null) values(#{user_name},#{user_pwd},#{user_age},#{user_sex},#{user_room},#{user_rela},#{user_tel},#{user_health},#{user_null})
+	</insert>
+
+	<update id="updateUser" parameterType="user">
+       update user set user_name=#{user_name},user_pwd=#{user_pwd},user_age=#{user_age},user_sex=#{user_sex},user_room=#{user_room},user_rela=#{user_rela},user_tel=#{user_tel},user_null=#{user_null} ,user_health=#{user_health}   where user_id=#{user_id}
+	</update>
+
+	<select id="queryUserById" resultType="user">
+		select * from user where user_id=#{id}
+	</select>
+
+	<select id="setRoom" resultType="room">
+		select * from room where room_con=#{id}
+	</select>
+	<update id="updataroom">
+		update room set room_con=1 where room_id=#{id}
+	</update>
+	<update id="updataroomnull">
+		update room set room_con=0 where room_id=#{id}
+	</update>
+	<select id="userinfoData" resultType="user">
+		select * from user where user_name=#{username}
+	</select>
+	<select id="useridinfoData" resultType="user">
+		select * from user where user_id=#{id}
+	</select>
+	<select id="setUserInfo" resultType="user">
+		select * from user
+	</select>
+</mapper>
+

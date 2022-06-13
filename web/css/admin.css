@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 清除默认样式 */
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 阴影效果 */
+.shadow {
+    transition: all .2s linear;
+}
+
+.shadow:hover {
+    margin-bottom: 18px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.1);
+}
+/* 头部导航栏 */
+.topbar {
+    position:relative;
+    position: fixed;
+    width: 100%;
+    height:82px;
+    background-color: #5c6b77;
+}
+
+.topbar-bd {
+    padding-top: 20px;
+    margin: auto;
+}
+.topbar-bd p{
+    float: left;
+    font-family: SimSun;
+    padding-left: 30px;
+    color: white;
+    font-size: 32px;
+}
+.topbar-bd span a{
+    float: right;
+    font-family: SimSun;
+
+    padding-top: 10px;
+    padding-right: 30px;
+    color: #f7f7f7;
+    font-size: 18px;
+}
+/**/
+.category {
+    position:relative;
+    position: fixed;
+    margin-top: 82px;
+    width: 250px;
+    float: left;
+    height: 100%;
+}
+
+.category ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px;
+    background: rgba(105,101,101,1);
+}
+
+.category ul li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.category ul li:hover {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    background-color: #ff6700;
+}
+
+.category ul li a{
+    text-decoration: none;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+}
+
+
+.category ul li span {
+    float: right;
+    padding-right: 20px;
+}
+/**/
+.categ {
+    position:relative;
+    position: fixed;
+    margin-top: 80px;
+    width: 250px;
+    float: left;
+    height: 40px;
+    font-size: 32px;
+}
+.cate {
+    position:relative;
+    position: fixed;
+    margin-top: 120px;
+    width: 300px;
+    float: left;
+    height: 100%;
+    font-size: 22px;
+}
+
+.cate ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px;
+    background: rgba(105,101,101,1);
+}
+
+.cate ul li {
+    list-style: none;
+    height: 80px;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.cate ul li:hover {
+    list-style: none;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 50px;
+    background-color: #ff6700;
+}
+
+.cate ul li a{
+    text-decoration: none;
+    height: 80px;
+    color: white;
+    line-height: 80px;
+}
+
+
+.cate ul li span {
+    float: right;
+    padding-right: 20px;
+}
+
+
+
+
+.banner {
+    width:90%;
+
+    padding-top: 82px;
+    padding-left: 150px;
+    background-color: white;
+}
+.banner-fool{
+
+    float: left;
+    padding-left: 20px;
+    background-color: white;
+}
+.banner-head{
+    text-align:center;
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 100%;
+   background-color: #cad9ea;
+    height: 70px;
+}
+.banner-header{
+    text-align:center;
+    padding-top: 80px;
+    padding-left: 50px;
+    width: 96%;
+    background-color: #cad9ea;
+}
+
+.banner-body{
+    float: left;
+    margin-top: 60px;
+    padding-left: 120px;
+    text-align: center;
+}
+.banner-user{
+    padding-left: 120px;
+}
+.list-side{
+    text-align: center;
+}
+/*room*/
+.list-side li{
+    float: left;
+    list-style: none;
+    width: 105px;
+    height:120px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+}
+.list-side li  a{
+    display: block;
+    width: 95px;
+    height:115px;
+    padding: 2px 0;
+    text-decoration: none;
+    background-color:lightyellow;
+}
+.list-side li .mobile-name {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
+.list-side li .mobile-price {
+    color:brown;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+th,td{
+    padding : 8px 16px;
+    border:1px solid #e9e9e9;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f7f7;
+    color : #5c6b77;
+    font-weight: 600;
+}
+
+
+.logn{
+    height: 100%;
+    background-image: url("https://tse1-mm.cn.bing.net/th/id/R-C.dab436e6a9d23101d719c1f3dd1a76a4?rik=ecsSPgiqEPBeNQ&riu=http%3a%2f%2fwww.shijuepi.com%2fuploads%2fallimg%2f201115%2f1-2011151G454.jpg&ehk=61OG%2bh8posKeFHHqLOOPJLQh6brnOHElxrxY9xRbGY4%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.lognbody {
+    width: 30%;
+    height: 400px;
+    background-color: #00000060;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 50px;
+}
+.lognbody p{
+    color: #ffffff90;
+    margin-top: 5%;
+}
+.textRight {
+    text-align: right;
+}
+.loginbtn{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: #fff;
+
+}
+.input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+
+
+}
+
+table{
+
+    border-collapse: collapse;
+    margin:auto;
+    text-align: center;
+}
+table tr:nth-child(odd)
+{
+    background: #fff;
+}
+table tr:nth-child(even)
+{
+    background: #F5FAFA;
+}
+table td, table th
+{
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}

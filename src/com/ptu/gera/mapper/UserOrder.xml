@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ptu.gera.mapper.UserOrder">  <!-- 要映射的mapper的完整包+mapper名称-->
+    <select id="setuserdoctor" resultType="userdoctor">
+        select * from userdoctor
+    </select>
+    <select id="setuseraccompany" resultType="useraccompany">
+        select * from useraccompany
+    </select>
+    <select id="setfood" resultType="userfood">
+        select * from userfood where food_time=#{time}
+    </select>
+    <insert id="infofood" >
+        insert into reservefood (fuser_id,ffood_id) values(#{0},#{1})
+    </insert>
+
+    <select id="querydoctor" resultType="orderDto">
+        SELECT COUNT(doctor_name)as value,doctor_name as name FROM userdoctor GROUP BY ddoctor_id
+    </select>
+    <select id="queryaccompany" resultType="orderDto">
+        SELECT COUNT(accompany_name)as value,accompany_name as name FROM useraccompany GROUP BY aaccompany_id
+    </select>
+    <select id="queryfood" resultType="orderDto">
+        SELECT COUNT(food_name)as value,food_name as name FROM userfood  WHERE food_time=#{time} GROUP BY ffood_id    </select>
+</mapper>
